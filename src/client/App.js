@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 
 class App extends React.Component {
   render() {
+    const { route } = this.props;
     return (
       <div>
         <Header />
@@ -27,4 +28,4 @@ App.defaultProps = {
   route: null
 };
 
-export default App;
+export default { component: App };
